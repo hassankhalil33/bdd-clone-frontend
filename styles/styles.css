@@ -13,7 +13,7 @@ img {
 /* General */
 
 body {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(240, 240, 240);
 }
 
 /* Utlities */
@@ -21,6 +21,12 @@ body {
 .container {
     padding: 0 12vh;
     width: 100%;
+}
+
+.filter {
+    backdrop-filter: grayscale(35%);
+    width: 100%;
+    margin: 0;
 }
   
 .btn {
@@ -35,6 +41,10 @@ body {
     font-weight: bold;
     padding: 12px 22px;
     border-radius: 30px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 /* Nav Bar*/
@@ -77,9 +87,8 @@ body {
 }
 
 .hero-content {
-    padding: 10vh 0 10vh 0;
+    padding: auto 0 auto 0;
     height: 90vh;
-    backdrop-filter: grayscale(35%);
 }
   
 .hero-heading {
@@ -101,10 +110,10 @@ body {
 }
 
 .foundations-heading {
-    margin: 6vh auto 3vh auto;
+    margin: auto;
     text-align: center;
-    width: 70vw;
     font-family: 'Poppins', sans-serif;
+    width: 70vw;
 }
 
 .foundations-img {
@@ -158,10 +167,87 @@ body {
     display: block;
 }
 
+/* Footer */
+
+.footer {
+    background-color: rgb(33, 33, 33);
+    padding: 5vh 15vw;
+    color: aliceblue;
+}
+
+.first-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-h4 {
+    margin: 50px 0 20px 0;
+    color: rgb(134, 134, 134);
+}
+
+.footer-form {
+    margin: 15% 0;
+}
+
+.first-footer > div {
+    width: 25%;
+    padding: 3%;
+}
+
+.first-footer > div:last-child {
+    width: 30%;
+}
+
+.lower-footer {
+    display: flex;
+    width: 100%;
+}
+
 /* Media Query */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .mobile {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .foundations-content {
+        width: 60vw;
+    }
+
+    .foundations-img {
+        width: 10vw;
+    }
+
+    .first-footer > div {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .first-footer > div:last-child {
+        width: 70vw;
+        text-align: center;
+    }
+
+    .first-footer > div:last-child > h3 {
+        margin-top: 15vh;
+        margin-bottom: -5vh;
+    }
+
+    .lower-footer > div{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .hero-heading {
+        font-size: 2.5rem;
     }
 }
