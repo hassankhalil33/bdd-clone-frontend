@@ -55,6 +55,10 @@ body {
     height: 100px;
     padding-top: 2vh;
 }
+
+.nav-logo {
+    margin-right: 5vw;
+}
   
 .links {
     list-style: none;
@@ -73,6 +77,11 @@ body {
 
 .links > li:last-child {
     margin-right: 0px;
+}
+
+/* Didnt Work :( */
+.ham-img {
+    display: none; 
 }
 
 /* Hero */
@@ -218,10 +227,15 @@ body {
 
     .foundations-content {
         width: 60vw;
+        margin: 1vh 0;
     }
 
     .foundations-img {
         width: 10vw;
+    }
+
+    .vision-heading {
+        color: black;
     }
 
     .first-footer > div {
@@ -243,6 +257,17 @@ body {
         text-align: center;
         width: 90%;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    /* Didnt Work :( */
+    .ham-img {
+        visibility: visible;
     }
 }
 
