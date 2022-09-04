@@ -10,6 +10,12 @@ img {
     height: 100%;
 }
 
+/* General */
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
 /* Utlities */
 
 .container {
@@ -84,4 +90,40 @@ img {
     text-align: center;
     width: 50vw;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Foundations */
+
+.foundations-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 4vh;
+}
+
+.foundations-heading {
+    margin: 6vh auto 3vh auto;
+    text-align: center;
+    width: 70vw;
+}
+
+.foundations-img {
+    height: 10vh;
+    width: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foundations-h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foundations-content {
+    display: flex;
+    flex-direction: column;
+    width: 17vw;
+    background-color: #fff;
+    padding: 3vh 3vw;
+    text-align: center;
+    font-family: 'Crimson Text', sans-serif;
 }
