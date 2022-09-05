@@ -79,9 +79,8 @@ body {
     margin-right: 0px;
 }
 
-/* Didnt Work :( */
 .ham-img {
-    display: none; 
+    opacity: 40%;
 }
 
 /* Hero */
@@ -335,13 +334,14 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    .links {
+    .links > li {
         display: none;
     }
+}
 
-    /* Didnt Work :( */
+@media only screen and (min-width: 801px) {
     .ham-img {
-        display: block;
+        display: none;
     }
 }
 
